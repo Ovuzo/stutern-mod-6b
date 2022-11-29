@@ -25,6 +25,9 @@ a{
 .b{
     border: yellow solid 2px;
 }
+.py-3{
+    padding: 2rem 0;
+}
 .container{
     width: 95%;
     margin: auto;
@@ -100,6 +103,44 @@ nav{
 }
 .sec1-link-cover{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 2px;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr 1.5fr 1fr 1fr;
+    gap: 5px;
+}
+#sec2{
+    width: 100%;
+}
+.sec2-cover{
+    
+    justify-content: left;
+    border: solid black 1px;
+    padding: 2rem;
+}
+.sec2-div1{
+    width: 100%;
+}
+.sec2-div2{
+    width: 100%;
+    height: 200px;
+}
+.sec2-slideWrap{
+    overflow: hidden;
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+}
+.sec2-slide{
+    display: flex;
+    animation-duration: 10s;
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-direction: linear; 
+}
+.sec2-card-img{
+    width:200px ;
+    height: 200px;
+    padding: 0 10px;
 }
